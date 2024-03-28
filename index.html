@@ -3,53 +3,14 @@
   <head>
     <title>Проект "Комменты"</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/styles.css"/>
   </head>
 
   <body>
-    <div class="loading">
-      <div class="comments-loading">
-        Wait please, comments are being loaded...
-        <!-- Пожалуйста подождите, комментарии загружаются... -->
-      </div>
+    <div id="app">
+      <div class="data-loading">Wait please, comments are being loaded...</div>
     </div>
-    <div class="container">
-      <ul id="comments-list" class="comments">
-        <!-- Comments рендерится из JS -->
-      </ul>
-
-      <div class="comment-loading">
-        <div class="comment-loader">Comment is being loaded...</div>
-      </div>
-
-      <div class="add-form">
-        <input
-          id="name-input"
-          type="text"
-          class="add-form-name"
-          placeholder="Введите ваше имя"
-        />
-        <textarea
-          id="textarea-input"
-          type="textarea"
-          class="add-form-text"
-          placeholder="Введите ваш коментарий"
-          rows="4"
-        ></textarea>
-        <div class="add-form-row">
-          <button id="add-form-button" class="add-form-button">Написать</button>
-        </div>
-      </div>
-    </div>
-
-    <script type="module" src="./main.js"></script>
   </body>
-  <style>
-    .error {
-      background-color: yellow;
-    }
-  </style>
-  <script>
-    
-  </script>
+
+  <script type="module" src="/main.js"></script>
 </html>
