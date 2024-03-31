@@ -1,4 +1,5 @@
 import { userLogin, registerUser } from "../api.js";
+import _ from "lodash";
 
 export const renderLoginComponent = ({
   comments,
@@ -136,7 +137,8 @@ export const renderLoginComponent = ({
           registerUser({
             login: login,
             password: password,
-            name: name,
+            // name: name,
+            name: _.capitalize(name),
           })
             .then((user) => {
               console.log(user);
