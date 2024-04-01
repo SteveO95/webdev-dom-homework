@@ -1,6 +1,6 @@
 import { getCurrentDate } from "./date.js";
 
-const host = "https://wedev-api.sky.pro/api/v2/dmitrii-the-best-sass/comments/";
+const host = "https://wedev-api.sky.pro/api/v2/sergey-syomin/comments/";
 const mainUser = "https://wedev-api.sky.pro/api/user/login";
 const newUser = "https://wedev-api.sky.pro/api/user";
 
@@ -92,7 +92,7 @@ export const registerUser = ({ login, password, name }) => {
 //likes
 export const toggleLike = ({ id, token }) => {
   return fetch(
-    `https://wedev-api.sky.pro/api/v2/dmitrii-the-best-sass/comments/${id}/toggle-like`,
+    `https://wedev-api.sky.pro/api/v2/sergey-syomin/comments/${id}/toggle-like`,
     {
       method: "POST",
       headers: {
