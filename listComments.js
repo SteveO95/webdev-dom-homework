@@ -10,7 +10,7 @@ const getListComments = (comment, index) => {
 <div class="comment-footer">
   <div class="likes">
     <span class="likes-counter"> ${comment.likesNumber}</span>
-    
+
     <button data-index="${index}" data-id="${comment.id}" class='${comment.propertyColorLike}'></button>
   </div>
 </div>
